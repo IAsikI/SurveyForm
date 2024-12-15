@@ -4,18 +4,22 @@
   gap: 1rem;
   align-items: left;
 }
+
+.lifestyle-info {
+}
+
 legend {
   text-align: center;
 }
 fieldset {
   width: 75%;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 form {
   background-color: rgba(37, 225, 8, 0.5);
   width: 85%;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
@@ -23,8 +27,9 @@ form {
 
 .styled-button {
   background-color: rgba(37, 225, 8, 0.5);
-  color: white;
+  color: black;
   padding: 10px 20px;
+  box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 5px;
   font-size: 16px; /* Для удобства чтения текста */
@@ -39,7 +44,11 @@ form {
 
 .header {
   text-align: center;
-  color: white;
+  color: rgb(14, 1, 1);
+  text-shadow: 1px 1px 2px rgba(0, 255, 4, 0.586);
+}
+#description {
+  font-size: 21px;
 }
 
 body {
