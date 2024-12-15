@@ -9,9 +9,6 @@
   margin: 0 auto;
 }
 
-.lifestyle-info {
-}
-
 .hobbies-info {
   display: flex;
   flex-direction: row;
@@ -91,6 +88,18 @@ body {
   justify-content: center; /* Горизонтальное центрирование */
   align-items: center;
 }
-.comments {
-  height: 100px;
+label .comments {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Расположить элементы вертикально */
+  font-size: 18px; /* Размер текста */
+  gap: 0.3rem; /* Отступ между текстом и полем ввода */
+}
+
+textarea {
+  width: 100%; /* Растянуть текстовое поле по ширине */
+  font-size: 14px; /* Размер текста в текстовом поле */
+  padding: 5px; /* Внутренние отступы */
+  resize: vertical; /* Ограничить изменение размера только по высоте */
+  margin: 0 -5px;
 }
