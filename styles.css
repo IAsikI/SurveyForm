@@ -22,7 +22,7 @@ form {
 }
 
 .styled-button {
-  background-color: blue;
+  background-color: rgba(37, 225, 8, 0.5);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -35,4 +35,16 @@ form {
 /* Эффект при наведении */
 .styled-button:hover {
   background-color: darkblue;
+}
+
+.header {
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-image: url(mnogo-znakov-voprosa-26.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
 }
