@@ -1,0 +1,38 @@
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: left;
+}
+legend {
+  text-align: center;
+}
+fieldset {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+form {
+  background-color: rgba(37, 225, 8, 0.5);
+  width: 85%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.styled-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px; /* Для удобства чтения текста */
+  cursor: pointer; /* Добавляет курсор указателя при наведении */
+  transition: background-color 0.3s ease; /* Анимация изменения фона */
+}
+
+/* Эффект при наведении */
+.styled-button:hover {
+  background-color: darkblue;
+}

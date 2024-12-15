@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Опрос</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Опрос</h1>
+    <p id="discription">Заполните данные этой формы опроса</p>
+    <a href="index_ru.html">
+      <input type="button" value="Русский" disabled />
+    </a>
+    <a href="index.html">
+      <input type="button" value="English" />
+    </a>
+    <form
+      id="survey-form"
+      method="post"
+      action="https://formspree.io/f/mzzbqlzk"
+    >
+      <fieldset class="personal-info">
+        <legend>О себе</legend>
+        <label for="name" id="name-label"
+          >Имя:
+          <input
+            id="name"
+            name="Имя"
+            type="text"
+            placeholder="Введите ваше имя"
+          />
+        </label>
+        <label for="email" id="email-label"
+          >Email:
+          <input
+            id="email"
+            name="Email"
+            type="email"
+            placeholder="Введите ваш email"
+          />
+        </label>
+        <label for="number" id="number-label"
+          >Возраст:
+          <input
+            id="number"
+            name="Возраст"
+            type="number"
+            min="5"
+            max="100"
+            placeholder="Введите ваш возраст"
+          />
+        </label>
+        <label for="dropdown"
+          >Пол
+          <select id="dropdown">
+            <option value="" disabled>Выберите пол</option>
+            <option value="Мужской">Мудской</option>
+            <option value="Женский">Женский</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset class="lifestyle-info">
+        <legend>Образ жизни</legend>
+        <section>
+          <h3>Вы ведете активный образ жизни?</h3>
+          <label for="active-yes">
+            <input
+              type="radio"
+              name="Активный_образ_жизни"
+              id="active-yes"
+              value="Да"
+              checked
+            />
+            Да
+          </label>
+          <label for="active-no">
+            <input
+              type="radio"
+              name="Активный_образ_жизни"
+              id="active-no"
+              value="Нет"
+            />
+            Нет
+          </label>
+        </section>
+        <section>
+          <h3>Следите ли вы за своим питанием?</h3>
+          <label for="diet-yes">
+            <input
+              type="radio"
+              name="Отслеживание_питания"
+              id="diet-yes"
+              value="Да"
+              checked
+            />
+            Да</label
+          >
+          <label for="diet-no">
+            <input
+              type="radio"
+              name="Отслеживание_питания"
+              id="diet-no"
+              value="Нет"
+            />
+            Нет</label
+          >
+        </section>
+        <section>
+          <h3>Есть ли у вас режим дня?</h3>
+          <label for="routine-yes">
+            <input
+              type="radio"
+              name="Режим_дня"
+              id="routine-yes"
+              value="Да"
+              checked
+            />
+            Да</label
+          >
+          <label for="routine-no">
+            <input type="radio" name="Режим_дня" id="routine-no" value="Нет" />
+            Нет</label
+          >
+        </section>
+        <section>
+          <h3>Как вы оцениваете свой уровень энергии в течение дня?</h3>
+          <label for="energy-high">
+            <input
+              type="radio"
+              name="Уровень_энергии"
+              id="energy-high"
+              value="Высокий"
+              checked
+            />
+            Высокий</label
+          >
+          <label for="energy-medium">
+            <input
+              type="radio"
+              name="Уровень_энергии"
+              id="energy-medium"
+              value="Средний"
+            />
+            Средний</label
+          >
+          <label for="energy-low">
+            <input
+              type="radio"
+              name="Уровень_энергии"
+              id="energy-low"
+              value="Низкий"
+            />
+            Низкий</label
+          >
+        </section>
+      </fieldset>
+      <fieldset class="hobbies-info">
+        <legend>Хобби</legend>
+        <label for="hobbie1"
+          >Спорт:
+          <input id="hobbie1" type="checkbox" name="Хобби" value="Спорт" />
+        </label>
+        <label for="hobbie2"
+          >Музыка:
+          <input id="hobbie2" type="checkbox" name="Хобби" value="Музыка" />
+        </label>
+        <label for="hobbie3"
+          >Коллекционирование:
+          <input
+            id="hobbie3"
+            type="checkbox"
+            name="Хобби"
+            value="Коллекционирование"
+          />
+        </label>
+        <label for="hobbie4"
+          >Танцы:
+          <input id="hobbie4" type="checkbox" name="Хобби" value="Танцы" />
+        </label>
+        <label for="hobbie5"
+          >Компьютерные игры:
+          <input
+            id="hobbie5"
+            type="checkbox"
+            name="Хобби"
+            value="Компьютерные игры"
+          />
+        </label>
+        <label for="hobbie6"
+          >Чтение книг:
+          <input
+            id="hobbie6"
+            type="checkbox"
+            name="Хобби"
+            value="Чтение книг"
+          />
+        </label>
+        <label for="hobbie7"
+          >Свой вариант:
+          <input
+            id="hobbie7"
+            type="text"
+            maxlength="30"
+            name="Хобби"
+            placeholder="Введите ваше хобби"
+          />
+        </label>
+      </fieldset>
+      <fieldset class="comments">
+        <legend>Коментарии</legend>
+        <label for="comments"
+          >Ваш коментарий:
+          <textarea
+            id="comments"
+            name="Коментарий"
+            placeholder="Введите ваш коментарий"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
