@@ -31,6 +31,7 @@
             name="name"
             type="text"
             placeholder="Enter your name"
+            required
           />
         </label>
         <label for="email" id="email-label"
@@ -40,6 +41,7 @@
             name="email"
             type="email"
             placeholder="Enter your email"
+            required
           />
         </label>
         <label for="number" id="number-label"
@@ -51,11 +53,12 @@
             min="5"
             max="100"
             placeholder="Enter your age"
+            required
           />
         </label>
         <label for="dropdown"
           >Sex
-          <select id="dropdown">
+          <select id="dropdown" required>
             <option value="" disabled>Select the gender</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
@@ -211,8 +214,7 @@
       </fieldset>
       <fieldset class="comments">
         <legend>Comments</legend>
-        <label for="comments"
-          >Your comments:
+        <label for="comments">
           <textarea
             id="comments"
             name="comments"

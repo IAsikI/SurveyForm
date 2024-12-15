@@ -31,6 +31,7 @@
             name="Имя"
             type="text"
             placeholder="Введите ваше имя"
+            required
           />
         </label>
         <label for="email" id="email-label"
@@ -40,6 +41,7 @@
             name="Email"
             type="email"
             placeholder="Введите ваш email"
+            required
           />
         </label>
         <label for="number" id="number-label"
@@ -51,11 +53,12 @@
             min="5"
             max="100"
             placeholder="Введите ваш возраст"
+            required
           />
         </label>
         <label for="dropdown"
           >Пол
-          <select id="dropdown">
+          <select id="dropdown" required>
             <option value="" disabled>Выберите пол</option>
             <option value="Мужской">Мужской</option>
             <option value="Женский">Женский</option>
@@ -211,8 +214,7 @@
       </fieldset>
       <fieldset class="comments">
         <legend>Коментарий</legend>
-        <label for="comments"
-          >Ваш коментарий:
+        <label for="comments">
           <textarea
             id="comments"
             name="Коментарий"
