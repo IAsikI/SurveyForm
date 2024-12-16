@@ -8,7 +8,11 @@
   width: 250px;
   margin: 0 auto;
 }
-
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
 .hobbies-info {
   display: flex;
   flex-direction: row;
@@ -85,7 +89,7 @@ body {
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
-  width: 100%;
+  width: 95%;
 }
 
 .submit {
@@ -100,4 +104,16 @@ textarea {
   padding: 5px; /* Внутренние отступы */
   resize: vertical; /* Ограничить изменение размера только по высоте */
   margin: 0 -5px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.radio-group label {
+  display: flex; /* Включает Flexbox для кнопки и текста */
+  align-items: center; /* Выравнивает кнопку и текст по вертикали */
+  gap: 0.5rem; /* Отступ между кнопкой и текстом */
 }
