@@ -96,6 +96,7 @@ body {
   display: flex;
   justify-content: center; /* Горизонтальное центрирование */
   align-items: center;
+  margin-bottom: 15px;
 }
 
 textarea {
@@ -116,4 +117,38 @@ textarea {
   display: flex; /* Включает Flexbox для кнопки и текста */
   align-items: center; /* Выравнивает кнопку и текст по вертикали */
   gap: 0.5rem; /* Отступ между кнопкой и текстом */
+}
+
+/* Основные стили для модального окна */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: rgb(109, 107, 107);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+/* Стиль ссылки */
+.modal-link {
+  color: rgb(8, 8, 169);
+  text-decoration: underline;
+  cursor: pointer;
 }

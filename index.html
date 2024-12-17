@@ -242,6 +242,26 @@
           ></textarea>
         </label>
       </fieldset>
+      <!-- Чекбокс с текстом -->
+      <div class="submit">
+        <label>
+          <input type="checkbox" name="agree" required />
+          I agree to the
+          <span class="modal-link" id="openModal">terms and conditions</span>.
+        </label>
+      </div>
+
+      <!-- Модальное окно -->
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+          <h2>Terms and Conditions</h2>
+          <p>
+            Here are the terms and conditions of our service...<br />But there
+            are none &#128522;
+          </p>
+          <button class="styled-button" id="closeModal">Close</button>
+        </div>
+      </div>
       <div class="submit">
         <input
           class="styled-button"
@@ -252,5 +272,30 @@
         />
       </div>
     </form>
+
+    <script>
+      // Получение элементов
+      const openModalLink = document.getElementById('openModal');
+      const closeModalButton = document.getElementById('closeModal');
+      const modalOverlay = document.getElementById('modalOverlay');
+
+      // Открытие модального окна
+      openModalLink.addEventListener('click', event => {
+        event.preventDefault(); // Предотвращает переход по ссылке (если она сделана <a>)
+        modalOverlay.classList.add('active');
+      });
+
+      // Закрытие модального окна
+      closeModalButton.addEventListener('click', () => {
+        modalOverlay.classList.remove('active');
+      });
+
+      // Закрытие при клике на затемнённый фон
+      modalOverlay.addEventListener('click', event => {
+        if (event.target === modalOverlay) {
+          modalOverlay.classList.remove('active');
+        }
+      });
+    </script>
   </body>
 </html>
